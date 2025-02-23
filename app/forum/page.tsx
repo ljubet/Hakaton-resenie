@@ -17,7 +17,7 @@ export default function Forum() {
     const [newPost, setNewPost] = useState({ title: "", content: "" })
     const [isFormVisible, setIsFormVisible] = useState(false)
 
-    const handleSubmit = (e: { preventDefault: () => void }) => {
+    const handleSubmit = (  e: { preventDefault: () => void }) => {
         e.preventDefault()
         const newId = posts.length + 1
         setPosts([...posts, { id: newId, ...newPost, author: "Current User", comments: 0 }])
@@ -50,14 +50,14 @@ export default function Forum() {
                                 <form onSubmit={handleSubmit} className="space-y-4">
                                     <input
                                         type="text"
-                                        placeholder="Question Title"
+                                        placeholder="Прашање"
                                         value={newPost.title}
                                         onChange={(e) => setNewPost({ ...newPost, title: e.target.value })}
                                         className="w-full p-2 border border-gray-300 rounded"
                                         required
                                     />
                                     <textarea
-                                        placeholder="Question Details"
+                                        placeholder="Детали за прашањето"
                                         value={newPost.content}
                                         onChange={(e) => setNewPost({ ...newPost, content: e.target.value })}
                                         className="w-full p-2 border border-gray-300 rounded"

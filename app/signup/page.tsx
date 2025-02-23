@@ -14,7 +14,7 @@ export default function SignUp() {
           <div className="w-1/3 mx-auto shadow-lg text-center rounded-lg">
         <div className="max-w-md w-full space-y-8 p-8 mx-auto">
           <div className="text-center">
-            <h2 className="mt-2 text-center text-3xl font-extrabold text-brand-teal mb-32 ">Направи тој профил</h2>
+            <h2 className="mt-2 text-center text-3xl font-extrabold text-brand-teal mb-32 ">Креирај профил</h2>
           </div >
           <MultiStepRegistration />
         </div>
@@ -24,7 +24,7 @@ export default function SignUp() {
       <footer className="bg-gray-100 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
-            <p className="text-gray-500">&copy; 2023 Srekja.mk. All rights reserved.</p>
+            <p className="text-gray-500">&copy; 2025 Srekja.mk. All rights reserved.</p>
           </div>
         </div>
       </footer>

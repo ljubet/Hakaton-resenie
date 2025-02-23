@@ -37,7 +37,7 @@ const MultiStepRegistration: React.FC = () => {
                 }`}
               >
                 <FaUser size={48} className="text-brand-red mb-2" />
-                <span>Personal</span>
+                <span>Личен</span>
               </button>
               <button
                 type="button"
@@ -50,7 +50,7 @@ const MultiStepRegistration: React.FC = () => {
                 }`}
               >
                 <FaBuilding size={48} className="text-brand-red mb-2" />
-                <span>Business</span>
+                <span>Бизнис</span>
               </button>
             </div>
           </motion.div>
@@ -59,13 +59,13 @@ const MultiStepRegistration: React.FC = () => {
         {step === 2 && (
           <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }}>
             <h2 className="text-2xl font-bold text-brand-teal mb-4">
-              {accountType === "personal" ? "Your Name" : "Company Name"}
+              {accountType === "personal" ? "Име и презиме" : "Име на компанија"}
             </h2>
             <input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder={accountType === "personal" ? "Enter your name" : "Enter company name"}
+              placeholder={accountType === "personal" ? "Внесете име" : "Внесете име на компанија"}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-red"
               required
             />
@@ -74,20 +74,19 @@ const MultiStepRegistration: React.FC = () => {
               onClick={() => setStep(3)}
               className="mt-4 w-full bg-brand-red text-white py-2 rounded-md hover:bg-brand-orange transition-colors"
             >
-              Next
-            </button>
+Следно            </button>
           </motion.div>
         )}
 
         {step === 3 && (
           <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }}>
-            <h2 className="text-2xl font-bold text-brand-teal mb-4">Login Information</h2>
+            <h2 className="text-2xl font-bold text-brand-teal mb-4">Информации за корисникот</h2>
             <div className="space-y-4">
               <input
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                placeholder="Username"
+                placeholder="Корисничко име"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-red"
                 required
               />
@@ -95,7 +94,7 @@ const MultiStepRegistration: React.FC = () => {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Email"
+                placeholder="Мејл"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-red"
                 required
               />
@@ -103,7 +102,7 @@ const MultiStepRegistration: React.FC = () => {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="Password"
+                placeholder="Лозинка"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-red"
                 required
               />
@@ -112,7 +111,7 @@ const MultiStepRegistration: React.FC = () => {
               type="submit"
               className="mt-4 w-full bg-brand-red text-white py-2 rounded-md hover:bg-brand-orange transition-colors"
             >
-              Sign Up
+              Пријави се
             </button>
           </motion.div>
         )}
