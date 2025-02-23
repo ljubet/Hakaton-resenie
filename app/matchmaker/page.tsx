@@ -47,7 +47,7 @@ export default function Matchmaker() {
       <div className="min-h-screen flex flex-col" style={{
         backgroundImage: "url('./bg_(1) 2 (1).svg')", // Updated path to the SVG file
         backgroundSize: 'cover', // Ensure the image covers the entire div
-        backgroundPosition: 'center', // Center the background image
+        backgroundPosition: 'right', // Center the background image
         backgroundRepeat: 'no-repeat', // Prevent the image from repeating
       }}>
         <Navbar />
@@ -63,7 +63,7 @@ export default function Matchmaker() {
                         <p className="text-brand-red font-bold mt-2">{profile.match} Совпаѓање</p>
                         <a
                             href={`/profile/${profile.id}`}
-                            className="mt-4 inline-block bg-brand-yellow text-brand-teal px-4 py-2 rounded hover:bg-brand-orange hover:text-white transition-colors"
+                            className="mt-4 inline-block bg-brand-orange text-white px-4 py-2 rounded hover:bg-brand-yellow hover:text-white transition-colors"
                         >
                           Отвори профил
                         </a>
@@ -73,8 +73,8 @@ export default function Matchmaker() {
               </>
           ) : (
               <>
-                <h1 className="text-3xl font-bold text-brand-teal mb-8">Филија AI</h1>
-                <div className="max-w-2xl mt-32 bg-transparent rounded-lg shadow-sm p-6">
+                <h1 className="text-5xl font-bold text-brand-teal mb-8 pl-3">Филија AI</h1>
+                <div className="max-w-2xl mt-32 bg-transparent rounded-lg shadow-lg p-6 ">
                   <div className="mb-6">
                     <h2 className="text-xl font-semibold text-brand-teal mb-2">
                       Прашање {currentQuestion + 1} of {questions.length}
@@ -121,7 +121,7 @@ export default function Matchmaker() {
                               : "bg-gray-300 cursor-not-allowed"
                       }`}
                   >
-                    {currentQuestion === questions.length - 1 ? "Прикажи реззултати" : "Следно"}
+                    {currentQuestion === questions.length - 1 ? "Прикажи резултати" : "Следно"}
                     <ChevronRight size={20} />
                   </button>
                 </div>

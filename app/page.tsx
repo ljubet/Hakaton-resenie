@@ -71,12 +71,12 @@ export default function Home() {
               <h2 className="text-3xl font-bold text-brand-teal mb-8">
                 <span style={{fontFamily: 'Lobster, cursive'}}>Среќа</span> подкаст
               </h2>
-              <div className="max-w-2xl mx-auto flex justify-center">
+              <div className="max-w-1xl mx-auto flex justify-center drop-shadow-lg ">
                 <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/aa.png?height=400&width=600"
                     alt="Featured Podcast"
-                    width={600}
-                    height={400}
+                    width={390}
+                    height={300}
                     className="rounded-lg shadow-lg"
                 />
               </div>

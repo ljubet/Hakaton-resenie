@@ -28,12 +28,18 @@ export default function Forum() {
     return (
         <div>
             <Navbar />
-            <div className="container mx-auto px-4 py-8">
-                <h1 className="text-3xl font-bold text-brand-teal mb-8">Стартап форум</h1>
+            <div className="container mx-auto px-4 py-8" style={{
+                backgroundImage: "url('./Clip_path_group (1).svg')", // Updated path to the SVG file
+                backgroundSize: 'cover', // Ensure the image covers the entire div
+                backgroundPosition: 'right', // Center the background image
+                backgroundRepeat: 'no-repeat', // Prevent the image from repeating
+            }}>
+
+                <h1 className="text-5xl font-bold text-brand-teal mb-8">Стартап форум</h1>
                 <div className="mb-8">
                     <button
                         onClick={() => setIsFormVisible(true)}
-                        className="bg-brand-red text-white px-4 py-2 rounded hover:bg-brand-orange transition-colors mb-16"
+                        className="bg-brand-red text-white px-6 py-2 rounded hover:bg-brand-orange transition-colors mb-16"
                     >
                         Постави прашање
                     </button>
@@ -79,7 +85,7 @@ export default function Forum() {
                     )}
                 </div>
                 <div>
-                    <h2 className="text-2xl font-semibold text-brand-teal mb-12">Неодамнешни дискусии</h2>
+                    <h2 className="text-2xl font-semibold text-brand-teal mb-6 mt-20">Неодамнешни дискусии</h2>
                     <div className="flex flex-wrap -mx-2">
                         {posts.map((post) => (
                             <div key={post.id} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2 mb-4">
