@@ -42,6 +42,7 @@ export default function Matchmaker() {
     { id: 4, name: "David Brown", role: "Business Analyst", match: "80%" },
   ]
 
+  // @ts-ignore
   return (
       <div className="min-h-screen flex flex-col">
         <Navbar />

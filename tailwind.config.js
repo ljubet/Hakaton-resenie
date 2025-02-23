@@ -49,14 +49,11 @@ module.exports = {
         "brand-teal": "#127a71",
         "brand-orange": "#e76f30",
         "brand-red": "#d5224c",
-        borderRadius: {
-          lg: "var(--radius)",
-          md: "calc(var(--radius) - 2px)",
-          sm: "calc(var(--radius) - 4px)",
-        },
-        fontFamily: {
-          lobster: ['Lobster', 'cursive'],
-        },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
     },
   },
