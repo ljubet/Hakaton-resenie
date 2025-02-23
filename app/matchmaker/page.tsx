@@ -5,16 +5,16 @@ import { ChevronRight } from "lucide-react"
 import Navbar from "@/components/ui/Navbar"
 
 const questions = [
-  { id: 1, question: "What is your primary industry?", type: "text" },
-  { id: 2, question: "How many years of experience do you have?", type: "number" },
+  { id: 1, question: "Која е вашата примарна индустрија?", type: "text" },
+  { id: 2, question: "Колку години искуство имате?", type: "number" },
   {
     id: 3,
-    question: "What is your startup's current stage?",
+    question: "Која е моменталната фаза на вашиот стартап??",
     type: "select",
     options: ["Idea", "MVP", "Early Stage", "Growth", "Scale"],
   },
-  { id: 4, question: "What are your key skills?", type: "text" },
-  { id: 5, question: "What kind of partnership are you looking for?", type: "text" },
+  { id: 4, question: "Кои се вашите клучни вештини?", type: "text" },
+  { id: 5, question: "Какво партнерство барате?", type: "text" },
 ]
 
 export default function Matchmaker() {
@@ -42,24 +42,30 @@ export default function Matchmaker() {
     { id: 4, name: "David Brown", role: "Business Analyst", match: "80%" },
   ]
 
+  // @ts-ignore
   return (
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col" style={{
+        backgroundImage: "url('./bg_(1) 2 (1).svg')", // Updated path to the SVG file
+        backgroundSize: 'cover', // Ensure the image covers the entire div
+        backgroundPosition: 'right', // Center the background image
+        backgroundRepeat: 'no-repeat', // Prevent the image from repeating
+      }}>
         <Navbar />
         <div className="flex-grow container mx-auto px-4 py-8">
           {showResults ? (
               <>
-                <h1 className="text-3xl font-bold text-brand-teal mb-8">Your Matches</h1>
+                <h1 className="text-3xl font-bold text-brand-teal mb-8">Вашите резултати</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {matchedProfiles.map((profile) => (
                       <div key={profile.id} className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
                         <h2 className="text-xl font-semibold text-brand-teal">{profile.name}</h2>
                         <p className="text-gray-600">{profile.role}</p>
-                        <p className="text-brand-red font-bold mt-2">{profile.match} Match</p>
+                        <p className="text-brand-red font-bold mt-2">{profile.match} Совпаѓање</p>
                         <a
                             href={`/profile/${profile.id}`}
-                            className="mt-4 inline-block bg-brand-yellow text-brand-teal px-4 py-2 rounded hover:bg-brand-orange hover:text-white transition-colors"
+                            className="mt-4 inline-block bg-brand-orange text-white px-4 py-2 rounded hover:bg-brand-yellow hover:text-white transition-colors"
                         >
-                          View Profile
+                          Отвори профил
                         </a>
                       </div>
                   ))}
@@ -67,11 +73,11 @@ export default function Matchmaker() {
               </>
           ) : (
               <>
-                <h1 className="text-3xl font-bold text-brand-teal mb-8">AI Matchmaker</h1>
-                <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-sm p-6">
+                <h1 className="text-5xl font-bold text-brand-teal mb-8 pl-3">Филија AI</h1>
+                <div className="max-w-2xl mt-32 bg-transparent rounded-lg shadow-lg p-6 ">
                   <div className="mb-6">
                     <h2 className="text-xl font-semibold text-brand-teal mb-2">
-                      Question {currentQuestion + 1} of {questions.length}
+                      Прашање {currentQuestion + 1} of {questions.length}
                     </h2>
                     <div className="h-2 bg-gray-200 rounded-full">
                       <div
@@ -115,7 +121,7 @@ export default function Matchmaker() {
                               : "bg-gray-300 cursor-not-allowed"
                       }`}
                   >
-                    {currentQuestion === questions.length - 1 ? "Show Results" : "Next"}
+                    {currentQuestion === questions.length - 1 ? "Прикажи резултати" : "Следно"}
                     <ChevronRight size={20} />
                   </button>
                 </div>

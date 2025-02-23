@@ -28,31 +28,31 @@ export default function Navbar() {
                                 href="/"
                                 className="border-transparent text-gray-500 hover:border-brand-red hover:text-brand-red inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                             >
-                                Home
+                                Почетна
                             </Link>
                             <Link
                                 href="/about"
                                 className="border-transparent text-gray-500 hover:border-brand-red hover:text-brand-red inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                             >
-                                About
+                                Вести
                             </Link>
                             <Link
                                 href="/services"
                                 className="border-transparent text-gray-500 hover:border-brand-red hover:text-brand-red inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                             >
-                                Services
+                                Услуги
                             </Link>
                             <Link
                                 href="/matchmaker"
                                 className="border-transparent text-gray-500 hover:border-brand-red hover:text-brand-red inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                             >
-                                Matchmaker
+                                Поврзи ме
                             </Link>
                             <Link
                                 href="/forum"
                                 className="border-transparent text-gray-500 hover:border-brand-red hover:text-brand-red inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                             >
-                                Forum
+                                Форум
                             </Link>
                         </div>
                     </div>
@@ -63,13 +63,13 @@ export default function Navbar() {
                             href="/login"
                             className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-brand-teal hover:text-white hover:bg-brand-teal focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-teal"
                         >
-                            Log in
+                            Најави се
                         </Link>
                         <Link
                             href="/signup"
                             className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-brand-red hover:bg-brand-orange focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-red"
                         >
-                            Sign up
+                            Пријави се
                         </Link>
                     </div>
                 </div>

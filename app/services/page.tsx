@@ -22,7 +22,7 @@ export default function Services() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Our Services
+            Што нудиме?
           </motion.h1>
           <motion.p
             className="text-xl text-gray-600 mb-12"
@@ -30,7 +30,7 @@ export default function Services() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Explore our range of services designed to enhance your experience and foster connections.
+            Истражете го нашиот опсег на услуги дизајнирани да го подобрат вашето искуство и да поттикнат нови врски.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -39,12 +39,12 @@ export default function Services() {
             className="grid grid-cols-1 md:grid-cols-2 gap-8"
           >
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h2 className="text-2xl font-bold text-brand-red mb-4">Forum Discussions</h2>
-              <p className="text-gray-600">Engage in meaningful conversations with like-minded individuals.</p>
+              <h2 className="text-2xl font-bold text-brand-red mb-4">Дискусии на форум</h2>
+              <p className="text-gray-600">Вклучете се во значајни разговори со други млади претприемачи.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h2 className="text-2xl font-bold text-brand-red mb-4">Matchmaking</h2>
-              <p className="text-gray-600">Find your perfect match based on shared interests and values.</p>
+              <h2 className="text-2xl font-bold text-brand-red mb-4">Поврзување</h2>
+              <p className="text-gray-600">Најдете го вашиот совршен натпревар врз основа на заеднички интереси и вредности.</p>
             </div>
           </motion.div>
         </div>
@@ -53,7 +53,7 @@ export default function Services() {
       <footer className="bg-gray-100 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
-            <p className="text-gray-500">&copy; 2023 Your Brand. All rights reserved.</p>
+            <p className="text-gray-500">&copy; 2025 Srekja.mk All rights reserved.</p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-brand-teal">
                 <span className="sr-only">Facebook</span>
