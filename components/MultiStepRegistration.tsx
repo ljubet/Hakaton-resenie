@@ -24,7 +24,7 @@ const MultiStepRegistration: React.FC = () => {
       <form onSubmit={handleSubmit} className="space-y-6">
         {step === 1 && (
           <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -50 }}>
-            <h2 className="text-2xl font-bold text-brand-teal mb-4">Choose Account Type</h2>
+            <h2 className="text-2xl font-bold text-brand-teal mb-4 text-center">Одбери тип на профил</h2>
             <div className="flex justify-center space-x-4">
               <button
                 type="button"
