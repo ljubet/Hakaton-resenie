@@ -17,7 +17,7 @@ export default function Forum() {
     const [newPost, setNewPost] = useState({ title: "", content: "" })
     const [isFormVisible, setIsFormVisible] = useState(false)
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: { preventDefault: () => void }) => {
         e.preventDefault()
         const newId = posts.length + 1
         setPosts([...posts, { id: newId, ...newPost, author: "Current User", comments: 0 }])
