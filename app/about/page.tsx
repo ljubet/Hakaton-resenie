@@ -37,7 +37,6 @@ export default function About() {
 
                     <SearchBar />
 
-                    <NewsOfTheDayButton />
 
                     <NewsSection title="Humor" />
                     <NewsCarousel category="humor" />

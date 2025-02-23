@@ -15,11 +15,11 @@ const FloatingNewsButton: React.FC = () => {
     <div className="fixed bottom-4 right-4 z-50">
       <motion.button
         onClick={toggleNews}
-        className="bg-brand-red text-white px-4 py-2 rounded-full font-semibold hover:bg-brand-orange transition-colors shadow-lg"
+        className="bg-brand-orange text-white px-4 py-2 rounded-full font-semibold hover:bg-brand-yellow transition-colors shadow-lg"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        {showNews ? "Hide News" : "News of the Day"}
+        {showNews ? "Скриј вест" : "Вест на денот"}
       </motion.button>
       <AnimatePresence>
         {showNews && (

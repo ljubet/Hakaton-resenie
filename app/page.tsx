@@ -14,9 +14,13 @@ export default function Home() {
           <Navbar/>
         </nav>
 
-        <main className="flex-grow flex items-center justify-center bg-white">
-
-          <div className="text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 m">
+        <main className="flex-grow flex items-center justify-center bg-white"style={{
+          backgroundImage: "url('./bg_(1).svg')", // Updated path to the SVG file
+          backgroundSize: 'cover', // Ensure the image covers the entire div
+          backgroundPosition: 'center', // Center the background image
+          backgroundRepeat: 'no-repeat', // Prevent the image from repeating
+        }}>
+          <div className="text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 m" >
             <motion.div
                 className="text-6xl font-bold mb-8 space-y-4"
                 initial={{opacity: 0, y: -20}}
@@ -64,8 +68,10 @@ export default function Home() {
             </div>
 
             <div className="mt-1">
-              <h2 className="text-3xl font-bold text-brand-teal mb-8">Среќа Подкаст</h2>
-              <div className="max-w-2xl mx-auto">
+              <h2 className="text-3xl font-bold text-brand-teal mb-8">
+                <span style={{fontFamily: 'Lobster, cursive'}}>Среќа</span> Подкаст
+              </h2>
+              <div className="max-w-2xl mx-auto flex justify-center">
                 <Image
                     src="/placeholder.svg?height=400&width=600"
                     alt="Featured Podcast"
@@ -89,7 +95,7 @@ export default function Home() {
               <p className="text-gray-500">&copy; 2023 Srekja.mk. All rights reserved.</p>
               <div className="flex space-x-6">
                 <a href="#" className="text-gray-400 hover:text-brand-teal">
-                  <span className="sr-only">Facebook</span>
+                <span className="sr-only">Facebook</span>
                   <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path
                         fillRule="evenodd"
