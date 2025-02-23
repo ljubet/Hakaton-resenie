@@ -19,20 +19,20 @@ const NewsCarousel: React.FC<NewsCarouselProps> = ({ category }) => {
   const newsItems: NewsItem[] = [
     {
       id: 1,
-      title: `${category} News 1`,
-      excerpt: "This is a brief excerpt of the news article...",
+      title: `${category} Вести 1`,
+      excerpt: "Ова е пример за вести...",
       image: "/placeholder.svg",
     },
     {
       id: 2,
-      title: `${category} News 2`,
-      excerpt: "Another brief excerpt of a different news article...",
+      title: `${category} Вести 2`,
+      excerpt: "Ова е друг пример за вести...",
       image: "/placeholder.svg",
     },
     {
       id: 3,
-      title: `${category} News 3`,
-      excerpt: "Yet another brief excerpt of a news article...",
+      title: `${category} Вести 3`,
+      excerpt: "Ова е уште еден друг пример за вести...",
       image: "/placeholder.svg",
     },
   ]

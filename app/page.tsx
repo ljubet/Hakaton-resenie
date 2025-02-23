@@ -40,12 +40,12 @@ export default function Home() {
             </motion.div>
 
             <motion.p
-                className="text-xl text-gray-600 mb-7"
+                className="text-xl text-gray-400 mb-7"
                 initial={{opacity: 0, y: -20}}
                 animate={{opacity: 1, y: 0}}
                 transition={{duration: 0.5, delay: 0.2}}
             >
-              за среќа тука сме да помогнеме
+              за среќа, тука сме да помогнеме
             </motion.p>
 
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-48">
@@ -69,7 +69,7 @@ export default function Home() {
 
             <div className="mt-1">
               <h2 className="text-3xl font-bold text-brand-teal mb-8">
-                <span style={{fontFamily: 'Lobster, cursive'}}>Среќа</span> Подкаст
+                <span style={{fontFamily: 'Lobster, cursive'}}>Среќа</span> подкаст
               </h2>
               <div className="max-w-2xl mx-auto flex justify-center">
                 <Image
@@ -83,7 +83,7 @@ export default function Home() {
             </div>
 
             <div className="mt-9">
-              <h2 className="text-3xl font-bold text-brand-teal mb-8">Top Questions</h2>
+              <h2 className="text-3xl font-bold text-brand-teal mb-8">Актуелни прашања</h2>
               <TopQuestions/>
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function Home() {
         <footer className="bg-gray-100 py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center">
-              <p className="text-gray-500">&copy; 2023 Srekja.mk. All rights reserved.</p>
+              <p className="text-gray-500">&copy; 2025 Srekja.mk. All rights reserved.</p>
               <div className="flex space-x-6">
                 <a href="#" className="text-gray-400 hover:text-brand-teal">
                 <span className="sr-only">Facebook</span>

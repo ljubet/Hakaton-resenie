@@ -17,7 +17,7 @@ const SearchBar: React.FC = () => {
       <div className="flex">
         <input
           type="text"
-          placeholder="Search news..."
+          placeholder="Пребарај вести..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="flex-grow px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-brand-teal"
@@ -26,7 +26,7 @@ const SearchBar: React.FC = () => {
           type="submit"
           className="bg-brand-teal text-white px-6 py-2 rounded-r-md hover:bg-brand-red transition-colors"
         >
-          Search
+          Пребарај
         </button>
       </div>
     </form>

@@ -1,9 +1,9 @@
 import Link from "next/link"
 
 const topQuestions = [
-  { id: 1, title: "How to secure funding for your startup", author: "John Doe", comments: 15 },
-  { id: 2, title: "Best practices for remote team management", author: "Jane Smith", comments: 12 },
-  { id: 3, title: "The importance of user experience in product design", author: "Bob Johnson", comments: 10 },
+  { id: 1, title: "Како да дојдам до финансиски средства за мојот стартап?", author: "Љупчо Трошански", comments: 15 },
+  { id: 2, title: "Кои се добри практики за далечинско управување со тимот", author: "Петар Србиноски", comments: 12 },
+  { id: 3, title: "Важноста на корисничкото искуство во дизајнот на производот", author: "Симона Живковиќ", comments: 10 },
 ]
 
 export default function TopQuestions() {
@@ -18,12 +18,12 @@ export default function TopQuestions() {
             {question.title}
           </Link>
           <p className="text-sm text-gray-600">By {question.author}</p>
-          <p className="text-sm text-gray-500">{question.comments} comments</p>
+          <p className="text-sm text-gray-500">{question.comments} коментари</p>
         </div>
       ))}
       <div className="text-center mt-6">
         <Link href="/forum" className="text-brand-red hover:text-brand-orange">
-          View All Questions
+          Види повеќе прашања
         </Link>
       </div>
     </div>

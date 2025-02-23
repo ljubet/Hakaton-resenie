@@ -19,7 +19,7 @@ const FloatingNewsButton: React.FC = () => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        {showNews ? "Скриј вест" : "Вест на денот"}
+        {showNews ? "Сокриј" : "Среќа на денот"}
       </motion.button>
       <AnimatePresence>
         {showNews && (

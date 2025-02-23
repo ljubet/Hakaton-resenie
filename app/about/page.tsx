@@ -24,7 +24,7 @@ export default function About() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        About Us
+                        Вести
                     </motion.h1>
                     <motion.p
                         className="text-xl text-gray-600 mb-12 text-center"
@@ -32,27 +32,27 @@ export default function About() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
-                        We are dedicated to creating meaningful connections and fostering engaging discussions.
+                        Вашата дневна доза на возбудливи приказни, моменти кои го загреваат срцето и добри вибрации за да ви го разубават денот. Затоа што среќата вреди да се сподели!🌟
                     </motion.p>
 
                     <SearchBar />
 
 
-                    <NewsSection title="Humor" />
-                    <NewsCarousel category="humor" />
+                    <NewsSection title="😁Хумор" />
+                    <NewsCarousel category="Смешни" />
 
-                    <NewsSection title="Country News" />
-                    <NewsCarousel category="country" />
+                    <NewsSection title="💖 Национални вести" />
+                    <NewsCarousel category="Македонски" />
 
-                    <NewsSection title="World News" />
-                    <NewsCarousel category="world" />
+                    <NewsSection title="🌎 Светски Вест" />
+                    <NewsCarousel category="Светски" />
                 </div>
             </main>
 
             <footer className="bg-gray-100 py-8">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center">
-                        <p className="text-gray-500">&copy; 2023 Srekja.mk. All rights reserved.</p>
+                        <p className="text-gray-500">&copy; 2025 Srekja.mk. All rights reserved.</p>
                     </div>
                 </div>
             </footer>
